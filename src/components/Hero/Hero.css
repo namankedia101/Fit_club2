@@ -1,0 +1,138 @@
+.hero{
+    background-image: url("../../assets/home-bg-1.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-txt{
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-left: 4rem;
+    color: white;
+}
+
+.stats{
+    color: white;
+    margin-left: 4rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+.stats>div{
+    text-transform: uppercase;
+    transition: transform .2s;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+    width: 14rem;
+    border: 5px solid gray;
+    border-radius: 5px;
+    background-color:transparent;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.stats>div:hover{
+    transform: scale(1.5);
+    background-color: #184d68;
+    border: none;
+}
+
+.hero-buttons{
+    margin-left: 4rem;
+    margin-top: 4rem;
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+}
+
+.hero-buttons>:nth-child(1){
+    color: white;
+    background-color: #184d68;
+    width: 8rem;
+}
+
+.hero-buttons>:nth-child(2){
+    color: white;
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid #184d68;
+}
+
+@media screen and (max-width:768px) {
+    .hero{
+        background-position: center bottom;
+    }
+    
+    .hero-txt{
+        font-size: 3.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        color: white;
+    }
+
+    .stats{
+        color: white;
+        margin-left: .1rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        gap: .7rem;
+    }
+    .stats>div{
+        text-transform: uppercase;
+        transition: transform .2s;
+        font-size: .7rem;
+        display: flex;
+        flex-direction: column;
+        height: 3.3rem;
+        border: 1px solid gray;
+        border-radius: 5px;
+        background-color:transparent;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .stats>div>span{
+        margin-left: 1.5rem;
+    }
+    
+    .stats>div:hover{
+        transform: scale(1.1);
+        background-color: #184d68;
+        border: none;
+    }
+    
+    .hero-buttons{
+        font-size: small;
+        margin-left: 1rem;
+        margin-top: 3rem;
+        display: flex;
+        gap: 2rem;
+        font-weight: normal;
+    }
+    
+    .hero-buttons>:nth-child(1){
+        color: white;
+        background-color: #184d68;
+        width: 5rem;
+    }
+    
+    .hero-buttons>:nth-child(2){
+        color: white;
+        background-color: transparent;
+        width: 5rem;
+        border: 2px solid #184d68;
+    }
+}

@@ -1,0 +1,56 @@
+.header{
+    padding: 1rem;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+    margin-right: 2rem;
+}
+
+.menu>span:hover{
+    cursor: pointer;
+    color: #52b9ed;
+}
+
+@media screen and (max-width:768px) {
+    .header>:nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+
+    .header>:nth-child(2){
+        cursor: pointer;
+    }
+
+    .menu{
+        flex-direction: column;
+        background-color: gray;
+        padding: 2rem;
+    }
+    
+    .menu:hover{
+        cursor: pointer;
+    }
+
+    .bars{
+        background-color: #184d68;
+    }
+}
